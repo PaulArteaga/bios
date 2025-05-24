@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mensaje para Pocho</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: linear-gradient(to right, #111, #333);
+      color: #fff;
+      font-family: 'Raleway', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: #ff4d4d;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.5em;
+      margin-bottom: 40px;
+    }
+
+    .boton {
+      background: #ff4d4d;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border-radius: 12px;
+      color: white;
+      cursor: pointer;
+      transition: 0.3s;
+      margin: 10px;
+      text-decoration: none;
+    }
+
+    .boton:hover {
+      background: #e60000;
+    }
+
+    #mensaje {
+      display: none;
+      font-size: 2em;
+      margin-top: 30px;
+      color: #ffff66;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>¡Pocho! </h1>
+  <p>Cree esta pagina solo para decirte</p>
+
+  <button class="boton" onclick="mostrar()">Ver mensaje</button>
+  <a href="galeria.html" class="boton">Ver galería de Pocho 📸</a>
+
+  <div id="mensaje">¡QUE CHINGAS A TU MADRE!</div>
+
+  <script>
+    function mostrar() {
+      document.getElementById("mensaje").style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
